@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GroceryList />
     </div>
   );
 }
 
-export default App;
+function GroceryList() {
+  return (
+    <div>
+      <Header />
+      <FormAddItems />
+      <ItemList />
+      <Footer/>
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>😺Check your grocery list 🛒</h1>
+    </header>
+  );
+}
+function FormAddItems() {
+  return (
+    <form className="add-item">
+      <label> 🍟Item Name </label>
+      <input type="text" />
+      <label> 🕹️Item Quantity</label>
+      <input type="number" />
+      <button>Add</button>
+    </form>
+  );
+}
+
+function ItemList() {
+  return (
+    <div className="item-list">
+      <ul >
+        <Item />
+      </ul>
+    </div>
+  );
+}
+
+function Item() {
+  return (
+    <li>
+      <input type="checkbox" />
+      Salmon
+      <span>❌</span>
+    </li>
+  );
+}
+
+function Footer(){
+  return <footer className="footer">
+    Copy right reserved for Lexie 2024
+  </footer>
+}

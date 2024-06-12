@@ -1,13 +1,89 @@
-body {
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+body{
+  box-sizing: border-box;
+  
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  background-color: lightgreen;
+  height:100px;
+}
+.header h1{
+  text-align: center;
+  font-size: 40px;
+
+  line-height: 100px;
+}
+
+.add-item{
+  display: flex;
+  padding-top:20px;
+  padding-bottom: 20px;
+  gap:40px;
+  align-items: center;
+  justify-content: center;
+  background-color: lightyellow;
+  text-align: center;
+}
+.add-item label,.add-item button{
+  font-size: 20px;
+}
+.add-item input{
+  height: 30px;
+  border-radius: 10px;
+  border-width: 0.5px;
+  padding-left: 8px;
+}
+.add-item input:focus{
+  outline: none;
+}
+
+.add-item button{
+  padding: 5px;
+  width: 171px;
+  background-color: lightskyblue;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.item-list{
+  height: 480px;
+  background-color: lightcyan;
+  padding: 25px;
+}
+
+.item-list ul li{
+  border: 1px solid black;
+  background-color: lightskyblue;
+  padding: 5px;
+  width: 150px;
+  font-size: 18px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.item-list ul li input{
+  margin-right: 10px;
+  border-radius: 5px;
+  height: 15px;
+}
+.item-list ul li span{
+  text-align: right;
+  margin-left: 10px;
+}
+.footer{
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
 }
