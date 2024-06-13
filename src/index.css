@@ -63,6 +63,11 @@ body{
   padding: 25px;
 }
 
+.item-list ul{
+  display: flex ;
+  gap: 30px;
+}
+
 .item-list ul li{
   border: 1px solid black;
   background-color: lightskyblue;
@@ -78,12 +83,28 @@ body{
   border-radius: 5px;
   height: 15px;
 }
-.item-list ul li span{
+.item-list ul li button{
   text-align: right;
   margin-left: 10px;
+  cursor: pointer;
+  border: 0;
+  background-color: lightskyblue;
 }
-.footer{
-  text-align: center;
+
+
+.footer {
+text-align: center;
+line-height: 16px;
+height: 16px;
   font-size: 14px;
-  line-height: 18px;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; 
+  font-size: 12px; 
+  
 }
