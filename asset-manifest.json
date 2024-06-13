@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lexiecodingwithcat/self-project-grocery-list/static/css/main.494d903e.css",
+    "main.js": "/lexiecodingwithcat/self-project-grocery-list/static/js/main.5b39ad9a.js",
+    "index.html": "/lexiecodingwithcat/self-project-grocery-list/index.html",
+    "main.494d903e.css.map": "/lexiecodingwithcat/self-project-grocery-list/static/css/main.494d903e.css.map",
+    "main.5b39ad9a.js.map": "/lexiecodingwithcat/self-project-grocery-list/static/js/main.5b39ad9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.494d903e.css",
+    "static/js/main.5b39ad9a.js"
+  ]
+}
